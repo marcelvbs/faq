@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap');
+*
+{
+	margin: 0;
+	padding:0;
+	box-sizing: borde-box;
+	font-family:"Nunito", sans-serif;
+}
+main{	
+	width: 1500px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+.space{
+	height:30px;
+}
+.container{
+	justify-content:space-between;
+	display: flex;
+}
+
+/*A CLASSE faq DIVIDE O "CONTAINER" COM A CLASSE imgdapage */
+
+.faq{
+	width: 60%;
+}
+
+/* CLASSE item_faq*/
+.item_faq
+{
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-radius:7px;
+	margin: 3px;
+	width: 100%;
+}
+
+/*AÇÃO DA item_faq*/
+.item_faq.active
+{
+	border: none;
+}
+.item_faq.active  i
+{
+	transform: rotate(180deg);
+	transition: 0.4s;
+}
+.item_faq:not(.active) i
+{
+	transform: rotate(0);
+	transition: 0.4s;
+}
+
+.imgdapage img {
+    width: 110%;
+	float:right;
+}
+
+
+/* CLASSE INFO*/
+
+.info{	
+	width: 1500px;
+}
+.info p
+{
+	color:rgba (0, 0, 0, 0.7);
+	font-size: 16px;
+	line-height:1.4;
+	margin: 1.5rem 0;
+	margin-left:1.5rem;
+	margin-right:1.5rem;
+	text-align: justify;
+}
+
+/* CLASSE ACCORDION*/
+
+.accordion 
+{
+	background-color:white;
+	color: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	font-size: 1.2rem;
+	width: 100%;
+	padding:0.8rem 2.5rem;
+	border-radius:7px;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.accordion h2{
+	font-size: 1rem;
+	color:rgba (0, 0, 0, 0.7);		
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.accordion i
+{
+	font-size: 2 rem;
+}
+.accordion:hover
+{
+	background-color: #fcfcfc;
+	color:red;
+}
+.active,
+.accordion:hover
+{
+	background-color: #fcfcfc;
+}
+.active.accordion
+{
+	color: rgba(0, 0, 0, 0.8);
+	border-radius: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);	
+}
+
+/* CLASSE PANEL*/
+
+.panel
+{
+	background-color:white;
+	display: none;
+	overflow: hidden;
+	background-color:#fcfcfc;
+	padding:0 2rem 2.5rem 2 rem;
+	
+}
+.panel p
+{
+	color:rgba (0, 0, 0, 0.7);
+	font-size: 16px;
+	line-height:1.4;
+	margin: 1.5rem 0;
+	margin-left:1.5rem;
+	margin-right:1.5rem;
+	text-align: justify;
+}
+.panel li
+{
+	list-style-type: disc;
+	color:rgba (0, 0, 0, 0.7);
+	font-size: 16px;
+	line-height:1.4;
+	margin: 1.5rem 0;
+	margin-left:3rem;
+	margin-right:1.5rem;
+	text-align: justify;
+}
+/* Inseri o símbolo do marcador manualmente */
+.marcador
+{
+	font-size: 12px;
+}
+a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #1236a0;
+}
+a:hover{
+	color: #db0000;
+}
+p{
+	text-align: justify;
+}
